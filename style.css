@@ -9,7 +9,7 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 
  a{ /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
   text-decoration:none;  
-  font-size: 2em;
+  font-size: 1.75em;
   color:rgb(255, 225, 241);   
   margin: 0.25em;
   }
@@ -33,6 +33,6 @@ li{
 
 
 .font25 {
-  font-size: 2.5em;
+  font-size: 2em;
 
 }
