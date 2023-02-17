@@ -1,12 +1,17 @@
+
+
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
   list-style-type: none;
   margin: 0;
   padding: 0;
+
 } 
 
  a{ /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
-    font-size: 2.5rem;
-    color:rgb(255, 225, 241);  
+  text-decoration:none;  
+  font-size: 2em;
+  color:rgb(255, 225, 241);   
+  margin: 0.25em;
   }
 
 a:active{
@@ -18,5 +23,21 @@ a:hover{
 }
 
 .myLogo {
-  color:black;
-};
+  color:deeppink;
+  
+}
+
+li{
+  display: inline;
+}
+
+
+.font25 {
+  font-size: 2.5em;
+
+}
+
+.font2 {
+  font-size: 1.25em;
+ 
+}
