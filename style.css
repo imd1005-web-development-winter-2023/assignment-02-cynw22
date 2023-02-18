@@ -1,6 +1,12 @@
 
 header{
-  background-color: rgba(255, 0, 136, 0.466);
+  background-color: rgb(255, 192, 225);
+}
+
+body{
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
 }
 
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
@@ -13,7 +19,7 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
  a{ /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
   text-decoration:none;  
   font-size: 1.75em;
-  color:rgb(255, 225, 241);   
+  color:rgb(182, 30, 182);   
   margin: 0.25em;
   }
 
@@ -56,6 +62,9 @@ font-size: 5em;
 
 .font3{
   font-size: 3em;
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
 }
 
 .font2 {
@@ -64,12 +73,24 @@ font-size: 5em;
 }
 .font1 {
   font-size: 1em;
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
 }
 
 .font15 {
   font-size: 1.5em;
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
 }
 
 .font05{
   font-size: 0.5em;
 }
+
+/*
+https://www.webhostingsecretrevealed.net/blog/web-design/how-to-create-link-with-hover-image-in-plain-css/
+https://www.browserstack.com/guide/position-text-over-image-using-css
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
+*/
