@@ -1,4 +1,7 @@
 
+header{
+  background-color: rgba(255, 0, 136, 0.466);
+}
 
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
   list-style-type: none;
@@ -20,6 +23,16 @@ a:active{
 
 a:hover{
   color:deeppink;
+}
+
+h2{
+  color:deeppink;
+  font-size:4em;
+}
+
+h4{
+  color:deeppink;
+  font-size:4em;
 }
 
 .myLogo {
@@ -45,4 +58,8 @@ font-size: 5em;
 .font4 {
   font-size: 4em;
 
+}
+
+.font1 {
+  font-size: 1em;
 }
