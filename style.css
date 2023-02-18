@@ -27,7 +27,7 @@ a:hover{
 
 h2{
   color:deeppink;
-  font-size:4em;
+  font-size:3em;
 }
 
 h4{
@@ -44,12 +44,6 @@ li{
   display: inline;
 }
 
-
-.font2 {
-  font-size: 2em;
-
-}
-
 h1{
 font-size: 5em;
 
@@ -60,6 +54,22 @@ font-size: 5em;
 
 }
 
+.font3{
+  font-size: 3em;
+}
+
+.font2 {
+  font-size: 2em;
+
+}
 .font1 {
   font-size: 1em;
+}
+
+.font15 {
+  font-size: 1.5em;
+}
+
+.font05{
+  font-size: 0.5em;
 }
