@@ -7,7 +7,7 @@ body{
   --lightpinkcolor:rgb(255, 220, 239);
   --purplecolor: purple;
   --bluecolor: darkblue;
-  --imageWidth: 425px;
+  --imageWidth: 24vw;
   --font5: 5em;
   --font4: 4em;
   --font3: 3em;
@@ -30,6 +30,9 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 
 a {
   font-family: 'Helvetica';
+  text-decoration-style: none;
+  text-decoration-color: var(--purplecolor);
+
 }
 
 body a{
@@ -175,22 +178,30 @@ color:var(--pinkcolor);
 
 
 /*SECTION2 CSS*/
-.section2 h3{
+
+.section2{
   display: flex;
-  size:var(--font4);
-  justify-content:space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lightpinkcolor);
 }
 
 .section2 h2{
-  background-color: var(--lightpinkcolor);
   display: flex;
   justify-content: center;
 }
 
-.section2image {
+.section2text {
   display: flex;
-  justify-content: center;
-  background-color: var(--lightpinkcolor);
+  font-size:var(--font15);
+  width:100%;
+  justify-content:space-evenly;
+}
+
+.section2image, .section2text {
+  max-width: calc(var(--imageWidth) * 3) !important;
+  justify-self: center;
 }
 
 /*SECTION3 gallery CSS*/
@@ -242,3 +253,5 @@ footer{
 .clearflex {
   clear: both;
 }
+
+
