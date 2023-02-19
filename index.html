@@ -45,79 +45,102 @@
         https://www.freecodecamp.org/news/html-div-what-is-a-div-tag-and-how-to-style-it-with-css/#:~:text=With%20the%20div%20tag%2C%20you,it%20is%20easy%20to%20style.&text=To%20make%20a%20square%20with%20div%20tag%2C%20you%20first%20need,height%20and%20width%20for%20it.
         -->
         <div class="myHero">
-          <!--<img width="" src="0.jpg" alt="hero image banner of flowerbomb perfume with flowers surrounding it"/> 
-          --><h1>VIKTOR&ROLF</h1>
+          <div class="myHeroText">
+            <!--<img width="" src="0.jpg" alt="hero image banner of flowerbomb perfume with flowers surrounding it"/> -->
+            <h1>VIKTOR&ROLF</h1>
             <h2>FLOWERBOMB</h2>
+          </div>
         </div>
 
         <!-- SECTION1 -->
         <section>      
-          <div class="Section1">
-            <div><img width="" src="2.png" alt="image of bloom perfume"/></div>   
-            <div><h3><a href="error.html">BLOOM</a></h3></div> 
-            <!-- https://css-tricks.com/link-header-header-link/-->
-            <div><img width="" src="3.jpg" alt="image of bloom perfume 2"/></div> 
-            <!--https://www.wikihow.com/Add-Images-to-a-List-Using-HTML-Programming#:~:text=Insert%20the%20image%20tag%20inside%20of%20the%20list%20tags.&text=Paste%20the%20path%20of%20the,%22%22%20like%20in%20the%20image.-->
-            <div><h3><a href="error.html">BLOOM</a></h3></div>
-            <div><img width="" src="4.jpg" alt="image of Anya Taylor-Joy"/></div>       
-            <div><h3><a href="error.html">ABOUT US</a></h3></div>
+          <div class="section1">
+            <div class="column1">
+              <div><img width="" src="2.png" alt="image of bloom perfume"/>  
+              <h3><a href="error.html">BLOOM</a></h3></div> 
+              <!-- https://css-tricks.com/link-header-header-link/-->
+              <div><img width="" src="3.jpg" alt="image of bloom perfume 2"/>
+              <!--https://www.wikihow.com/Add-Images-to-a-List-Using-HTML-Programming#:~:text=Insert%20the%20image%20tag%20inside%20of%20the%20list%20tags.&text=Paste%20the%20path%20of%20the,%22%22%20like%20in%20the%20image.-->
+              <h3><a href="error.html">BLOOM</a></h3></div>
+            </div>
+            <div><img class="image3" width="" src="4.jpg" alt="image of Anya Taylor-Joy"/>     
+            <h3><a href="error.html">ABOUT US</a></h3></div>
           </div>
         </section>
 
         <!-- SECTION2 - li with flexbox -->
-        <section>
+        <section class="section2">
           <h2>PRODUCTS</h2>
           <ul>   
-            <!--Image goes here-->
-            <li><img width="" src="5.2.png" alt="image of dew, flowerbomb, and midnight perfume bottles"/></li>
-            <li><h3><a href="error.html">DEW</a></h3></li> 
-            <li><h3><a href="error.html">FLOWERBOMB</a></h3></li>
-            <li><h3><a href="error.html">MIDNIGHT</a></h3></li>
+            <li class="section2image"><img width="" src="5.2.png" alt="image of dew, flowerbomb, and midnight perfume bottles"/></li>
+            <div class="section2image">
+              <li><h3><a href="error.html">DEW</a></h3></li> 
+              <li><h3><a href="error.html">FLOWERBOMB</a></h3></li>
+              <li><h3><a href="error.html">MIDNIGHT</a></h3></li>
+            </div>
           </ul>
         </section>
 
         <!-- SECTION3 -->
-        <section>
-            <!--create 4 divs and then space out or 
-            lists and then strip the circles
-            Not going to lose marks if dont use lists
-            ideally lists would work for this-->
-
-          <ul class="gallery">   
-            <li><img width="" src="6.2.png" alt="image of bloom perfume"/></li>  
-            <li><img width="" src="7.jpg" alt="image of dew perfume"/></li>
-            <li><img width="" src="8.jpg" alt="image of flowerbomb perfume"/></li>
-
-            <li><h3><a href="error.html">BLOOM</a></h3></li> 
-            <li><h3><a href="error.html">DEW</a></h3></li> 
-            <li><h3><a href="error.html">FLOWERBOMB</a></h3></li> 
-            
-            <li><img width="" src="9.jpg" alt="image of midnight perfume"/></li>
-            <li><img width="" src="10.1.png" alt="image of ruby orchid perfume"/></li>              
-            <li><img width="" src="11.png" alt="image of nectar orchid perfume"/></li>
-            
-            <li><h3><a href="error.html">MIDNIGHT</a></h3></li> 
-            <li><h3><a href="error.html">RUBY ORCHID</a></h3></li> 
-            <li><h3><a href="error.html">NECTAR</a></h3></li> 
-
-            <li><img width="" src="12.jpeg" alt="image of limited edition flowerbomb perfume"/></li>              
-            <li><img width="" src="13.png" alt="image of good fortune perfume"/></li>
-
-            <li><h3><a href="error.html">LIMTED EDITION</a></h3></li> 
-            <li><h3><a href="error.html">OTHER PRODUCTS</a></h3></li> 
-          </ul>
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <img width="" src="6.2.png" alt="image of bloom perfume"/>
+              <h3 class="textgallery"><a href="error.html">BLOOM</a></h3> 
+            </div>
+            <div>
+              <img width="" src="7.jpg" alt="image of dew perfume"/>
+              <h3 class="textgallery"><a href="error.html">DEW</a></h3>
+            </div> 
+            <div>
+              <img width="" src="8.jpg" alt="image of flowerbomb perfume"/>
+              <h3 class="textgallery"><a href="error.html">FLOWERBOMB</a></h3> 
+            </div>
+          </div>
         </section>
-      
+          
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <img width="" src="9.jpg" alt="image of midnight perfume"/>
+              <h3 class="textgallery"><a href="error.html">MIDNIGHT</a></h3> 
+            </div>
+            <div>
+              <img width="" src="10.1.png" alt="image of ruby orchid perfume"/>
+              <h3 class="textgallery"><a href="error.html">RUBY ORCHID</a></h3>
+            </div> 
+            <div>
+              <img width="" src="11.png" alt="image of nectar orchid perfume"/>
+              <h3 class="textgallery"><a href="error.html">NECTAR</a></h3> 
+            </div>
+          </div>
+        </section>
+          
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <img width="" src="12.jpeg" alt="image of limited edition flowerbomb perfume"/>
+              <h3 class="textgallery"><a href="error.html">LIMTED EDITION</a></h3> 
+            </div>
+            <div>
+              <li><img width="" src="13.png" alt="image of good fortune perfume"/></li>
+              <h3 class="textgallery"><a href="error.html">OTHER PRODUCTS</a></h3>
+            </div> 
+          </div>
+        </section>
+    
         <!-- SECTION4 -->
-        <h2 class="font3">CONTACT US</h2>
-        <form>
-          <label for="email" class="font15">Email(required):</label>
-          <input type="email" id="email" name="email" placeholder="chris@avengers.com" autocomplete="email" required="required" />
-          <label for="message" class="font15">Message:</label>
-          <textarea id="messsage" rows="3" placeholder="Message goes here"></textarea>
-          <button type="submit" class="font1">SUBMIT</button>
-          <button type="reset" class="font1">RESET</button>
-        </form>
+        <section class="section4">
+          <h2>CONTACT US</h2>
+          <form>
+            <label for="email" class="font15">Email(required):</label>
+            <input type="email" id="email" name="email" placeholder="chris@avengers.com" autocomplete="email" required="required" />
+            <label for="message" class="font15">Message:</label>
+            <textarea id="messsage" rows="3" placeholder="Message goes here"></textarea>
+            <button type="submit" class="font1">SUBMIT</button>
+            <button type="reset" class="font1">RESET</button>
+          </form>
+        </section>
       </div>
     </main> 
       
@@ -126,24 +149,24 @@
         <table>
           <tbody>
             <tr>
-              <td><a href="error.html" class="font1">FAQ</a></td>
-              <td><a href="error.html" class="font1">CONTACT</a></td>
-              <td><a href="error.html" class="font1">PRODUCTS</a></td>
+              <td><a href="error.html">FAQ</a></td>
+              <td><a href="error.html">CONTACT</a></td>
+              <td><a href="error.html">PRODUCTS</a></td>
             </tr>
             <tr>
-              <td><a href="error.html" class="font1">BLOOM</a></td>
-              <td><a href="error.html" class="font1">DEW</a></td>
-              <td><a href="error.html" class="font1">FLOWERBOMB</a></td>
+              <td><a href="error.html">BLOOM</a></td>
+              <td><a href="error.html">DEW</a></td>
+              <td><a href="error.html">FLOWERBOMB</a></td>
             </tr>
             <tr>
-              <td><a href="error.html" class="font1">MIDNIGHT</a></td>
-              <td><a href="error.html" class="font1">RUBY ORCHID</a></td>
-              <td><a href="error.html" class="font1">NECTAR</a></td>
+              <td><a href="error.html">MIDNIGHT</a></td>
+              <td><a href="error.html">RUBY ORCHID</a></td>
+              <td><a href="error.html">NECTAR</a></td>
             </tr>
             <tr>
-              <td><a href="error.html" class="font1">LIMITED</a></td>
-              <td><a href="error.html" class="font1">OTHER</a></td>
-              <td><a href="account.html" class="font1">ACCOUNT</a> </td>
+              <td><a href="error.html">LIMITED</a></td>
+              <td><a href="error.html">OTHER</a></td>
+              <td><a href="account.html">ACCOUNT</a> </td>
             </tr>
           </tbody>
         </table>
