@@ -45,26 +45,28 @@ a:active{
 }
 
 /* header a:visited{
-color:var(--bluecolor);
+    color:var(--bluecolor);
 } */
 
 a:hover{
 color:var(--pinkcolor);
 }
 
+h1{
+  font-size: var(--font5);
+}
+
 h2{
- color:var(--pinkcolor);
-font-size:var(--font3);
+  color:var(--pinkcolor);
+  font-size:var(--font3);
 }
 
 li{
-display: inline-block;
+  display: inline-block;
 }
 
-
-h1{
-font-size: var(--font5);
-
+p{
+  background-color: var(--lightpinkcolor);
 }
 
 .fontsize1 {
@@ -251,9 +253,3 @@ footer{
   display: flex;
   justify-content: center;
 }
-
-.clearflex {
-  clear: both;
-}
-
-
