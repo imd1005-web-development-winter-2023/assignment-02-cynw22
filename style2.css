@@ -51,7 +51,7 @@ body{
     margin-left: 5%;
     width: 20vw;
     text-shadow: 5px 5px rgba(0, 0, 255, .2);
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 139, 0.2);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 139, 0.2); /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
 }
   
   .error2 {
@@ -68,7 +68,7 @@ body{
 
   }
 
-  div.bubble{
+  div.bubble{  /*https://www.freecodecamp.org/news/css-radial-gradient/*/
     background-image: radial-gradient(50% 50% at top, var(--yellowcolor) 100% 80%,#0000 81% 100%);
     background-repeat: no-repeat;
     background-size: 15vw; 
