@@ -194,7 +194,6 @@ color:var(--pinkcolor);
 }
 
 /*SECTION3 gallery CSS*/
-
 .gallery{
   display: flex;
   flex-direction: row;
