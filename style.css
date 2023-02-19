@@ -244,6 +244,25 @@ color:var(--pinkcolor);
 
 /*Footer CSS*/
 footer{
+   background-color: var(--lightpinkcolor);
+}
+
+footer .myFootColumns{
+  display: flex;
+  flex-direction: column;
+  justify-content: middle;
+  padding-left: 25vw;
+}
+
+footer a{
+  size: var(--font1);
+  margin: 1.5%;
+   size: var(--font1);
+  flex-direction: column;
+  justify-content: middle;
+}
+
+/*footer{
     background-color: var(--lightpinkcolor);
 }
 
@@ -259,3 +278,4 @@ footer{
   flex-direction: column;
   justify-content: middle;
 }
+*/
