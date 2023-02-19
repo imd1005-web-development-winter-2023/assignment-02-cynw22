@@ -1,12 +1,20 @@
-
-header{
-  background-color: rgb(255, 192, 225);
-}
-
 body{
   font-family:'Helvetica';
   margin: 0;
   padding: 0;
+  --pinkcolor: deeppink;
+  --otherpinkcolor: rgb(182, 30, 182);
+  --lightpinkcolor:rgb(255, 224, 240);
+  --purplecolor: purple;
+  --bluecolor: darkblue;
+  --imageWidth: 200px;
+  --font4: 4em;
+  --font3: 3em;
+  --font2: 2em;
+}
+
+header{
+  background-color: var(--lightpinkcolor);
 }
 
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
@@ -16,78 +24,128 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
 
 } 
 
- a{ /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
-  text-decoration:none;  
-  font-size: 1.75em;
-  color:rgb(182, 30, 182);   
-  margin: 0.25em;
-  }
-
 a:active{
-    color:purple;
+  color:var(--purplecolor);
+}
+
+header a:visited{
+color:var(--bluecolor);
 }
 
 a:hover{
-  color:deeppink;
+color:var(--pinkcolor);
 }
 
 h2{
-  color:deeppink;
-  font-size:3em;
+ color:var(--pinkcolor);
+font-size:var(--font3);
 }
 
 h4{
-  color:deeppink;
-  font-size:4em;
+color:var(--pinkcolor);
+font-size:4em;
 }
 
-.myLogo {
-  color:deeppink;
-  
+
+img{
+max-width: 200px;
 }
 
 li{
-  display: inline;
+display: inline-block;
 }
+
 
 h1{
 font-size: 5em;
 
 }
 
-.font4 {
-  font-size: 4em;
-
-}
-
 .font3{
-  font-size: 3em;
-  font-family:'Helvetica';
-  margin: 0;
-  padding: 0;
+font-size: 3em;
+font-family:'Helvetica';
+margin: 0;
+padding: 0;
 }
 
-.font2 {
-  font-size: 2em;
-
-}
 .font1 {
-  font-size: 1em;
-  font-family:'Helvetica';
-  margin: 0;
-  padding: 0;
+font-size: 1em;
+font-family:'Helvetica';
+margin: 0;
+padding: 0;
 }
 
 .font15 {
-  font-size: 1.5em;
-  font-family:'Helvetica';
-  margin: 0;
-  padding: 0;
+font-size: 1.5em;
+font-family:'Helvetica';
+margin: 0;
+padding: 0;
 }
 
 .font05{
-  font-size: 0.5em;
+font-size: 0.5em;
 }
+
+.myLogo {
+color:var(--pinkcolor);
+
+}
+
+.myNav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  background-color: var(--lightpinkcolor);
+  padding: 20;
+ }
+
+ .myNav a { /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
+   text-decoration:none;  
+   display: inline;
+   font-size: 1.75em;
+   color:var(--otherpinkcolor);   
+   margin: 0.25em; 
+   font-size: var(--font2);
+ }
+
+  .myNav a:hover{
+      color:var(--pinkcolor);
+  }
+
+  .margin5 {
+    margin: 1px !important;
+    display:inline-flex !important;
+  }
+
+
+.myHero{ /*https://www.editorx.com/shaping-design/article/resize-image-css*/
+  height: auto;
+ min-width: var(--imageWidth); 
+ background-image: url("0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding-bottom: var(--imageWidth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  flex-wrap: nowrap;
+}
+
+.myHero h2{
+  font-size:var(--font4);
+
+}
+
+.gallery li{
+  max-width: var(--imageWidth);
+  height: var(--imageWidth);
+}
+
 
 /*
 https://www.webhostingsecretrevealed.net/blog/web-design/how-to-create-link-with-hover-image-in-plain-css/
