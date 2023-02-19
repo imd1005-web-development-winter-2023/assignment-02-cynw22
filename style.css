@@ -13,6 +13,7 @@ body{
   --font3: 3em;
   --font2: 2em;
   --font1: 1em;
+  --font15: 1.5em;
 }
 
 header{
@@ -24,7 +25,16 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-family: 'Helvetica';
 } 
+
+a {
+  font-family: 'Helvetica';
+}
+
+body a{
+  font-size: var(--font15);
+}
 
 a:active{
   color:var(--purplecolor);
@@ -61,13 +71,14 @@ margin: 0;
 padding: 0;
 }
 
-.font15 {
-font-size: 1.5em;
-font-family:'Helvetica';
-margin: 0;
-padding: 0;
-}
+.fontsize15 {
+  font-size: var(--font15);
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
+  }
 
+  
 .font05{
 font-size: 0.5em;
 }
@@ -137,7 +148,7 @@ color:var(--pinkcolor);
 }
 
 .myHero h2{
-  font-size:var(--font4);
+  font-size:var(--font3);
 }
 
 /*SECTION1 CSS*/
@@ -166,7 +177,7 @@ color:var(--pinkcolor);
 /*SECTION2 CSS*/
 .section2 h3{
   display: flex;
-  size:var(--font3);
+  size:var(--font4);
   justify-content:space-evenly;
 }
 
@@ -211,13 +222,22 @@ color:var(--pinkcolor);
   justify-content: center;
 }
 
+.section4 form{
+  display:flex;
+  justify-content: middle;
+  font-size: var(--font2);
+}
+
 /*Footer CSS*/
 footer a{
   size: var(--font1);
+  margin: 1.5%;
 }
 
 footer{
   background-color: var(--lightpinkcolor);
+  display: flex;
+  justify-content: center;
 }
 
 .clearflex {
