@@ -148,10 +148,12 @@ color:var(--pinkcolor);
 .myHeroText{
   margin-left: 20px;
   margin-top: 20px;
+  text-shadow: 5px 5px rgba(128, 0, 128, .2);
 }
 
 .myHero h2{
   font-size:var(--font3);
+  text-shadow: 5px 5px rgba(225, 20, 147, .2);
 }
 
 /*SECTION1 CSS*/
