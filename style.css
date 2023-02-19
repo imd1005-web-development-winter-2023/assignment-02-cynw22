@@ -4,7 +4,7 @@ body{
   padding: 0;
   --pinkcolor: deeppink;
   --otherpinkcolor: rgb(182, 30, 182);
-  --lightpinkcolor:rgb(255, 224, 240);
+  --lightpinkcolor:rgb(255, 220, 239);
   --purplecolor: purple;
   --bluecolor: darkblue;
   --imageWidth: 200px;
@@ -15,6 +15,7 @@ body{
 
 header{
   background-color: var(--lightpinkcolor);
+  font-family: 'Helvetica';
 }
 
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
@@ -86,6 +87,7 @@ padding: 0;
 font-size: 0.5em;
 }
 
+/*NAVIGATION CSS*/
 .myLogo {
 color:var(--pinkcolor);
 
@@ -113,13 +115,13 @@ color:var(--pinkcolor);
  }
 
  .myNav a:visited{
-  color:var(--pinkcolor);
+  color:var(--purplecolor);
 }
 .myNav a{
-  color:var(--pinkcolor);
+  color:var(--purplecolor);
 }
   .myNav a:hover{
-      color:var(--purplecolor);
+      color:var(--pinkcolor);
   }
 
   .margin5 {
@@ -127,11 +129,11 @@ color:var(--pinkcolor);
     display:inline-flex !important;
   }
 
-
+/*HERO CSS*/
 .myHero{ /*https://www.editorx.com/shaping-design/article/resize-image-css*/
   height: auto;
- min-width: var(--imageWidth); 
- background-image: url("0.jpg");
+  min-width: var(--imageWidth); 
+  background-image: url("0.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
   padding-bottom: var(--imageWidth);
@@ -147,11 +149,15 @@ color:var(--pinkcolor);
 
 }
 
+/*SECTION1 CSS*/
+
+/*SECTION2 CSS*/
 .gallery li{
   max-width: var(--imageWidth);
   height: var(--imageWidth);
 }
 
+/*SECTION3 CSS*/
 
 /*
 https://www.webhostingsecretrevealed.net/blog/web-design/how-to-create-link-with-hover-image-in-plain-css/
