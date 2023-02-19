@@ -2,12 +2,13 @@ body{
   font-family:'Helvetica';
   margin: 0;
   padding: 0;
+
   --pinkcolor: deeppink;
   --otherpinkcolor: rgb(182, 30, 182);
   --lightpinkcolor:rgb(255, 220, 239);
   --purplecolor: purple;
   --bluecolor: darkblue;
-  --imageWidth: 200px;
+  --imageWidth: 425px;
   --font4: 4em;
   --font3: 3em;
   --font2: 2em;
@@ -48,8 +49,8 @@ font-size:4em;
 }
 
 
-img{
-max-width: 200px;
+.gallery img{
+max-width: var(--imageWidth);
 }
 
 li{
@@ -144,12 +145,34 @@ color:var(--pinkcolor);
   flex-wrap: nowrap;
 }
 
+.myHeroText{
+  margin: 20px;
+}
+
 .myHero h2{
   font-size:var(--font4);
-
 }
 
 /*SECTION1 CSS*/
+.section1
+{
+  display: flex;
+  justify-content: center;
+}
+
+.section1 .column1
+{
+  margin-right: 30px;
+  
+}
+.section1 img{
+  max-width: var(--imageWidth);
+}
+
+.section1 .image3
+{
+  max-height: var(--imageWidth)+var(--imageWidth);
+}
 
 /*SECTION2 CSS*/
 .gallery li{
