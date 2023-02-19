@@ -28,9 +28,9 @@ a:active{
   color:var(--purplecolor);
 }
 
-header a:visited{
+/* header a:visited{
 color:var(--bluecolor);
-}
+} */
 
 a:hover{
 color:var(--pinkcolor);
@@ -112,8 +112,14 @@ color:var(--pinkcolor);
    font-size: var(--font2);
  }
 
+ .myNav a:visited{
+  color:var(--pinkcolor);
+}
+.myNav a{
+  color:var(--pinkcolor);
+}
   .myNav a:hover{
-      color:var(--pinkcolor);
+      color:var(--purplecolor);
   }
 
   .margin5 {
