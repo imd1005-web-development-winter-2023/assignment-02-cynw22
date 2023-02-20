@@ -24,7 +24,7 @@ ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
   list-style-type: none;
   margin: 0;
   padding: 0;
-} 
+}
 
 a {
   text-decoration-line:none;
@@ -37,21 +37,16 @@ body a{
 
 a:active{
   color:var(--purplecolor);
- 
+
 }
 
 /* header a:visited{
-    color:var(--bluecolor);
+  color:var(--bluecolor);
 } */
 
 a:hover{
-color:var(--pinkcolor);
+  color:var(--pinkcolor);
 }
-
-h1{
-  font-size: var(--font5);
-}
-
 h2{
   color:var(--pinkcolor);
   font-size:var(--font3);
@@ -74,32 +69,13 @@ li{
   display: inline-block;
 }
 
-p{
-  background-color: var(--lightpinkcolor);
-}
-
-.fontsize1 {
-font-size: 1em;
-font-family:'Helvetica';
-margin: 0;
-padding: 0;
-}
-
-.fontsize15 {
-  font-size: var(--font15);
-  font-family:'Helvetica';
-  margin: 0;
-  padding: 0;
-  }
-
-  
-.font05{
-font-size: 0.5em;
+h1{
+  font-size: var(--font5);
 }
 
 /*NAVIGATION CSS*/
 .myLogo {
-color:var(--pinkcolor);
+  color:var(--pinkcolor);
 
 }
 
@@ -112,32 +88,32 @@ color:var(--pinkcolor);
   flex-wrap: nowrap;
   list-style: none;
   background-color: var(--lightpinkcolor);
-  padding: 20;
- }
+  /* padding: 25px; */
+}
 
- .myNav a { /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
-   text-decoration:none;  
-   display: inline;
-   font-size: 1.75em;
-   color:var(--otherpinkcolor);   
-   margin: 0.25em; 
-   font-size: var(--font2);
- }
+.myNav a { /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
+  text-decoration:none;
+  display: inline;
+  font-size: 1.75em;
+  color:var(--otherpinkcolor);
+  margin: 0.25em;
+  font-size: var(--font2);
+}
 
- .myNav a:visited{
+.myNav a:visited{
   color:var(--purplecolor);
 }
 .myNav a{
   color:var(--purplecolor);
 }
-  .myNav a:hover{
-      color:var(--pinkcolor);
-  }
+.myNav a:hover{
+  color:var(--pinkcolor);
+}
 
-  .margin5 {
-    margin: 1px !important;
-    display:inline-flex !important;
-  }
+.margin5 {
+  margin: 1px !important;
+  display:inline-flex !important;
+}
 
 /*HERO CSS*/
 .myHero{ /*https://www.editorx.com/shaping-design/article/resize-image-css*/
@@ -148,12 +124,12 @@ color:var(--pinkcolor);
   flex-wrap: nowrap;
   vertical-align: center;
   height: auto;
-  min-width: var(--imageWidth); 
+  min-width: var(--imageWidth);
   background-image: url("0.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   padding-bottom: var(--imageWidth);
-  
+
 }
 
 .myHeroText{
@@ -178,7 +154,7 @@ color:var(--pinkcolor);
 .section1 .column1
 {
   margin-right: 30px;
-  
+
 }
 .section1 img{
   max-width: var(--imageWidth);
@@ -221,7 +197,7 @@ color:var(--pinkcolor);
 .gallery{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
@@ -253,14 +229,14 @@ color:var(--pinkcolor);
 .section4 label {
   width:10em;
 }
-.section4 input, 
+.section4 input,
 .section4 textarea {
   width:30em;
 }
 
 /*Footer CSS*/
 footer{
-   background-color: var(--lightpinkcolor);
+  background-color: var(--lightpinkcolor);
 }
 
 footer .myFootColumns{
@@ -270,29 +246,11 @@ footer .myFootColumns{
   padding-left: 25vw;
 }
 
-footer a{
+footer a {
   size: var(--font1);
-  margin: 1.5%;
-   size: var(--font1);
+  text-decoration-line:revert;
   flex-direction: column;
-  justify-content: middle;
-}
-
-/*footer{
-    background-color: var(--lightpinkcolor);
-}
-
-.myFootColumns{
-  display: flex;
-  flex-direction: column;
-  justify-content: middle;
-  padding-left: 25vw;
-}
-
-.myFootText{
-  size: var(--font1);
-  flex-direction: column;
-  justify-content: middle;
+  justify-self:center;
 }
 */
 
