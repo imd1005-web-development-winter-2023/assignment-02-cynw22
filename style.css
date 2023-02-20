@@ -241,6 +241,13 @@ color:var(--pinkcolor);
   justify-content: middle;
   font-size: var(--font2);
 }
+.section4 label {
+  width:10em;
+}
+.section4 input, 
+.section4 textarea {
+  width:30em;
+}
 
 /*Footer CSS*/
 footer{
@@ -279,3 +286,7 @@ footer a{
   justify-content: middle;
 }
 */
+
+input#email:invalid {
+  outline: 1px solid var(--pinkcolor);
+}
