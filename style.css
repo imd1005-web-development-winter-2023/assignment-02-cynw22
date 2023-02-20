@@ -18,21 +18,17 @@ body{
 
 header{
   background-color: var(--lightpinkcolor);
-  font-family: 'Helvetica';
 }
 
 ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica';
 } 
 
 a {
-  font-family: 'Helvetica';
-  text-decoration-style: none;
+  text-decoration-line:none;
   text-decoration-color: var(--purplecolor);
-
 }
 
 body a{
@@ -59,6 +55,19 @@ h1{
 h2{
   color:var(--pinkcolor);
   font-size:var(--font3);
+}
+
+.section2text > h3,
+img ~ h3.textgallery {
+  position: relative;
+  bottom: var(--font15);
+  backdrop-filter:blur(5px);
+}
+
+.section1 > div:hover h3.textgallery,
+h3.textgallery:focus-within {
+  opacity:75%;
+  background-color:white;
 }
 
 li{
