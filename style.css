@@ -125,7 +125,7 @@ h1{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: left;
+  align-items:flex-start;
   flex-wrap: nowrap;
   vertical-align: center;
   height: auto;
@@ -165,14 +165,7 @@ h1{
   max-width: var(--imageWidth);
 }
 
-.section1 .image3
-{
-  max-height: var(--imageWidth)*4;
-}
-
-
 /*SECTION2 CSS*/
-
 .section2{
   display: flex;
   justify-content: center;
@@ -216,7 +209,7 @@ h1{
 }
 
 .gallery .textgallery{
-  size:var(--font3);
+  font-size:var(--font1);
   justify-content: space-evenly;
 }
 
@@ -228,7 +221,7 @@ h1{
 
 .section4 form{
   display:flex;
-  justify-content: middle;
+  justify-content: center;
   font-size: var(--font2);
 }
 .section4 label {
@@ -247,17 +240,16 @@ footer{
 footer .myFootColumns{
   display: flex;
   flex-direction: column;
-  justify-content: middle;
+  justify-content: center;
   padding-left: 25vw;
 }
 
 footer a {
-  size: var(--font1);
+  font-size: var(--font15);
   text-decoration-line:revert;
   flex-direction: column;
   justify-self:center;
 }
-*/
 
 input#email:invalid {
   outline: 1px solid var(--pinkcolor);
