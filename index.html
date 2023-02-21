@@ -25,5 +25,184 @@
       YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
 
     -->
+    <header>
+      <div class="myNav">
+        <nav> <!-- got from exercise 2 solution, navigation bar-->
+          <ul>
+            <li><a href="index.html"><span class="myLogo">VIKTOR&ROLF</span></a></li>
+            <li><a href="error.html">ABOUT US</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="error.html">OTHER</a></li>
+            <li><a href="error.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="myBody">
+        <!--HERO
+          https://www.freecodecamp.org/news/html-div-what-is-a-div-tag-and-how-to-style-it-with-css/#:~:text=With%20the%20div%20tag%2C%20you,it%20is%20easy%20to%20style.&text=To%20make%20a%20square%20with%20div%20tag%2C%20you%20first%20need,height%20and%20width%20for%20it.
+        -->
+        <div class="myHero">
+          <div class="myHeroText">
+            <!--<img src="0.jpg" alt="hero image banner of flowerbomb perfume with flowers surrounding it"/> -->
+            <h1>VIKTOR&ROLF</h1>
+            <h2>FLOWERBOMB</h2>
+          </div>
+        </div>
+
+        <!-- SECTION1: 2 images on the left and one on the right with text underneath -->
+        <section>      
+          <div class="section1">
+            <div class="column1">
+              <div><img src="2.png" alt="image of bloom perfume" />
+                <h3><a href="error.html">BLOOM</a></h3>
+              </div>
+              <!-- https://css-tricks.com/link-header-header-link/-->
+              <div><img src="3.JPG" alt="image of bloom perfume 2" />
+                <!--https://www.wikihow.com/Add-Images-to-a-List-Using-HTML-Programming#:~:text=Insert%20the%20image%20tag%20inside%20of%20the%20list%20tags.&text=Paste%20the%20path%20of%20the,%22%22%20like%20in%20the%20image.-->
+                <h3><a href="error.html">BLOOM</a></h3>
+              </div>
+            </div>
+            <div><img class="image3" src="4.png" alt="image of Anya Taylor-Joy" />
+              <h3><a href="error.html">ABOUT US</a></h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION2 - the main product image with 3 links underneath -->
+        <section>
+          <div class="section2">
+            <h2 id="products">PRODUCTS</h2>
+            <img class="section2image" src="5.2.png" alt="image of dew, flowerbomb, and midnight perfume bottles" />
+            <div class="section2text">
+              <h3><a href="error.html">DEW</a></h3>
+              <h3><a href="error.html">FLOWERBOMB</a></h3>
+              <h3><a href="error.html">MIDNIGHT</a></h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION3 the gallery of most of the products within Flowerbomb of Viktor & Rolf-->
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <a href="error.html">
+                <img src="6.2.png" alt="image of bloom perfume" />
+                <h3 class="textgallery">BLOOM</h3>
+              </a>
+            </div>
+            <div>
+              <a href="error.html">
+                <img src="7.jpg" alt="image of dew perfume" />
+                <h3 class="textgallery">DEW</h3>
+              </a>
+            </div>
+            <div>
+              <a href="error.html">
+                <img src="8.jpg" alt="image of flowerbomb perfume" />
+                <h3 class="textgallery">FLOWERBOMB</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <a href="error.html">
+                <img src="9.png" alt="image of midnight perfume" />
+                <h3 class="textgallery">MIDNIGHT</h3>
+              </a>
+            </div>
+            <div>
+              <a href="error.html">
+                <img src="10.1.png" alt="image of ruby orchid perfume" />
+                <h3 class="textgallery">RUBY ORCHID</h3>
+              </a>
+            </div>
+            <div>
+              <a href="error.html">
+                <img src="11.png" alt="image of nectar orchid perfume" />
+                <h3 class="textgallery">NECTAR</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="section1">
+            <div>
+              <a href="error.html">
+                <img src="12.png" alt="image of limited edition flowerbomb perfume" />
+                <h3 class="textgallery">LIMTED EDITION</h3>
+              </a>
+            </div>
+            <div>
+              <a href="error.html">
+                <img src="13.png" alt="image of good fortune perfume" />
+                <h3 class="textgallery">OTHER PRODUCTS</h3>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION4 -->
+        <form>
+          <section class="section4">
+            <h2 id="contacts">CONTACT US</h2>
+            <div class="section1">
+              <label for="email">Email(required):</label>
+              <input type="email" id="email" name="email" placeholder="chris@avengers.com" autocomplete="email"
+                required="required" />
+            </div>
+            <!-- </section>  
+                    <section class="section4">  -->
+            <div class="section1">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="3" placeholder="Message goes here"></textarea>
+            </div>
+          </section>
+          <div class="section4">
+            <div class="section1">
+              <button type="submit">SUBMIT</button>
+              <button type="reset">RESET</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!--Footer all the navigation links and the copyright and logo-->
+    <footer>
+      <div class="myFootColumns">
+        <a href="#">Back to top?</a>
+        <table>
+          <tbody>
+            <tr>
+              <td><a href="error.html">FAQ</a></td>
+              <td><a href="#contacts">CONTACT</a></td>
+              <td><a href="#products">PRODUCTS</a></td>
+            </tr>
+            <tr>
+              <td><a href="error.html">BLOOM</a></td>
+              <td><a href="error.html">DEW</a></td>
+              <td><a href="error.html">FLOWERBOMB</a></td>
+            </tr>
+            <tr>
+              <td><a href="error.html">MIDNIGHT</a></td>
+              <td><a href="error.html">RUBYORCHID</a></td>
+              <td><a href="error.html">NECTAR</a></td>
+            </tr>
+            <tr>
+              <td><a href="error.html">LIMITED</a></td>
+              <td><a href="error.html">OTHER</a></td>
+              <td><a href="error.html">ACCOUNT</a> </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>VIKTOR&ROLF ©2023 VIKTOR&ROLF</p>
+    </footer>
   </body>
 </html>

@@ -1,3 +1,256 @@
-/*
-  CSS File
-*/
+body{
+  font-family:'Helvetica';
+  margin: 0;
+  padding: 0;
+  --pinkcolor: deeppink;
+  --otherpinkcolor: rgb(182, 30, 182);
+  --lightpinkcolor:rgb(255, 220, 239);
+  --purplecolor: purple;
+  --bluecolor: darkblue;
+  --imageWidth: 24vw;
+  --font5: 5em;
+  --font4: 4em;
+  --font3: 3em;
+  --font2: 2em;
+  --font1: 1em;
+  --font15: 1.5em;
+}
+
+header{
+  background-color: var(--lightpinkcolor);
+}
+
+ul { /* https://getcssscan.com/blog/how-to-remove-bullets-from-li-css */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration-line:none;
+  text-decoration-color: var(--purplecolor);
+}
+
+body a{
+  font-size: var(--font15);
+}
+
+a:active{
+  color:var(--purplecolor);
+
+}
+
+/* header a:visited{
+  color:var(--bluecolor);
+} */
+
+a:hover{
+  color:var(--pinkcolor);
+}
+h2{
+  color:var(--pinkcolor);
+  font-size:var(--font3);
+}
+
+.section2text > h3,
+img ~ h3.textgallery {
+  position: relative;
+  bottom: var(--font15);
+  /* backdrop-filter:blur(5px);  */
+  opacity:75%;
+  background-color:white;
+}
+
+.section2text > h3{
+  bottom: var(--font4);
+}
+
+/* .section1 > div:hover h3.textgallery,
+h3.textgallery:focus-within {
+  backdrop-filter:none; 
+} */
+
+li{
+  display: inline-block;
+}
+
+h1{
+  font-size: var(--font5);
+}
+
+/*NAVIGATION CSS*/
+.myLogo {
+  color:var(--pinkcolor);
+
+}
+
+.myNav nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  flex-wrap: nowrap;
+  list-style: none;
+  background-color: var(--lightpinkcolor);
+  /* padding: 25px; */
+}
+
+.myNav a { /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links*/
+  text-decoration:none;
+  display: inline;
+  font-size: 1.75em;
+  color:var(--otherpinkcolor);
+  margin: 0.25em;
+  font-size: var(--font2);
+}
+
+.myNav a:visited{
+  color:var(--purplecolor);
+}
+.myNav a{
+  color:var(--purplecolor);
+}
+.myNav a:hover{
+  color:var(--pinkcolor);
+}
+
+.margin5 {
+  margin: 1px !important;
+  display:inline-flex !important;
+}
+
+/*HERO CSS*/
+.myHero{ /*https://www.editorx.com/shaping-design/article/resize-image-css*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items:flex-start;
+  flex-wrap: nowrap;
+  vertical-align: center;
+  height: auto;
+  min-width: var(--imageWidth);
+  background-image: url("0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: var(--imageWidth);
+
+}
+
+.myHeroText{
+  margin-left: 20px;
+  margin-top: 20px;
+  text-shadow: 5px 5px rgba(128, 0, 128, .2);
+}
+
+.myHero h2{
+  font-size:var(--font3);
+  text-shadow: 5px 5px rgba(225, 20, 147, .2);
+}
+
+/*SECTION1 CSS*/
+.section1
+{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.section1 .column1
+{
+  margin-right: 30px;
+
+}
+.section1 img{
+  max-width: var(--imageWidth);
+}
+
+/*SECTION2 CSS*/
+.section2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lightpinkcolor);
+}
+
+.section2 h2{
+  display: flex;
+  justify-content: center;
+}
+
+.section2text {
+  display: flex;
+  font-size:var(--font15);
+  width:100%;
+  justify-content:space-evenly;
+}
+
+.section2image, .section2text {
+  max-width: calc(var(--imageWidth) * 3) !important;
+  justify-self: center;
+}
+
+/*SECTION3 gallery CSS*/
+.gallery{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  width: 100%;
+  background-color: var(--lightpinkcolor);
+}
+
+.gallery img{
+  max-width: var(--imageWidth);
+  max-height: var(--imageWidth);
+}
+
+.gallery .textgallery{
+  font-size:var(--font1);
+  justify-content: space-evenly;
+}
+
+/*SECTION4 forms CSS*/
+.section4 h2{
+  display: flex;
+  justify-content: center;
+}
+
+.section4 form{
+  display:flex;
+  justify-content: center;
+  font-size: var(--font2);
+}
+.section4 label {
+  width:10em;
+}
+.section4 input,
+.section4 textarea {
+  width:30em;
+}
+
+/*Footer CSS*/
+footer{
+  background-color: var(--lightpinkcolor);
+}
+
+footer .myFootColumns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25vw;
+}
+
+footer a {
+  font-size: var(--font15);
+  text-decoration-line:revert;
+  flex-direction: column;
+  justify-self:center;
+}
+
+input#email:invalid {
+  outline: 1px solid var(--pinkcolor);
+}
